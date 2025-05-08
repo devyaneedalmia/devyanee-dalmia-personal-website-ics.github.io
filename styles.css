@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  line-height: 1.8;
+  color: black;
+}
+
+.navbar {
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar a {
+  color: red;
+  text-decoration: none;
+  margin: 0 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 50px;
+  flex-wrap: wrap;
+}
+
+.hero-img img {
+  max-width: 450px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.hero-text {
+  font-size: 4.5em;
+  font-weight: bold;
+  color: red;
+  text-align: left;
+  line-height: 1.1;
+  padding-left: 60px;
+  max-width: 600px;
+}
+
+.content {
+  max-width: 750px;
+  margin: auto;
+  padding: 40px 20px;
+  font-size: 1.2em;
+  line-height: 2;
+  text-align: center;
+}
+
+.content p {
+  max-width: 60ch;
+  margin: 0 auto 24px;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+hr {
+  border: 1px solid #ddd;
+  width: 90%;
+  margin: 40px auto;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin: 40px 0;
+}
+
+.footer-links a {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.resume-embed {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.resume-embed iframe {
+  width: 95%;
+  height: 1500px;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-text {
+    font-size: 3em;
+    padding-left: 0;
+  }
+
+  .hero-img img {
+    max-width: 90%;
+  }
+
+  .resume-embed iframe {
+    height: 1200px;
+  }
+
+  .navbar a {
+    margin: 10px;
+    display: inline-block;
+  }
+}
